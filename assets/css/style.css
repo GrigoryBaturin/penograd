@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #F8F7F7;
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+}
+
+h1, h2, h3, h4, p {
+    color: #424242;
+}
+
+a {
+    color: #465B66;
+    text-decoration: none;
+    letter-spacing: 0%;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.wrapper {
+    padding: 0 70px;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.topbar {
+    display: grid;
+    grid-template-columns: 1fr 9fr 1fr;
+    padding: 30px 0;
+    justify-items: center;
+    align-items: center;
+}
+
+.menu ul, .social ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu ul li {
+    margin-right: 21px;
+}
+
+.menu ul li:last-child {
+    margin-right: 0px;
+}
+
+.menu ul li a:hover {
+    color: #25390F;
+    text-decoration: underline;
+    transition: 0.5s;
+}
+
+.social ul li {
+    margin-right: 9px;
+}
+
+.social ul li:last-child {
+    margin-right: 0px;
+}
