@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -7,69 +8,310 @@
 }
 
 body {
-    width: 100%;
-    min-height: 100vh;
-    background-color: #F8F7F7;
     font-family: "Manrope", sans-serif;
-    font-optical-sizing: auto;
+    background-color: #F8F7F7;
 }
 
-h1, h2, h3, h4, p {
-    color: #424242;
-}
-
-a {
-    color: #465B66;
-    text-decoration: none;
-    letter-spacing: 0%;
-    font-size: 1.5rem;
-    font-weight: 500;
-}
-
-.wrapper {
-    padding: 0 70px;
-}
-
-header {
+/* контейнер */
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 80px 40px;
     width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
+}
+
+/* header */
+.header {
+    width: 100%;
 }
 
 .topbar {
     display: grid;
     grid-template-columns: 1fr 9fr 1fr;
-    padding: 30px 0;
-    justify-items: center;
+    align-items: center;
+    padding: 30px 40px;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.logo img {
+    max-width: 220px;
+}
+
+.menu ul,
+.social ul {
+    list-style: none;
+    display: flex;
     align-items: center;
 }
 
-.menu ul, .social ul {
-    list-style: none;
-    display: flex;
+.menu ul {
     justify-content: center;
-    align-items: center;
 }
 
 .menu ul li {
-    margin-right: 21px;
+    margin-right: 35px;
 }
 
 .menu ul li:last-child {
-    margin-right: 0px;
+    margin-right: 0;
 }
 
-.menu ul li a:hover {
+.menu a {
+    color: #465B66;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.menu a:hover {
     color: #25390F;
-    text-decoration: underline;
-    transition: 0.5s;
 }
 
 .social ul li {
-    margin-right: 9px;
+    margin-right: 7px;
 }
 
-.social ul li:last-child {
-    margin-right: 0px;
+.social img {
+    max-width: 35px;
+}
+
+/* hero */
+.hero {
+    position: relative;
+    min-height: 100vh;
+    background: url("../images/ideogram-v3.0_modern_minimalist_garage_made_of_white_concrete_polystyrene_concrete_structure_s-0.jpg") center/cover no-repeat;
+    color: #fff;
+}
+
+.hero__overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, rgba(0,0,0,0.6), transparent);
+}
+
+/* контейнер внутри hero */
+.hero .container {
+    position: relative;
+    z-index: 2;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.hero__content {
+    max-width: 100%;
+}
+
+.hero__title {
+    font-size: 3.6rem;
+    line-height: 1.2;
+    color: #fff;
+}
+
+.hero__subtitle {
+    font-size: 2.3rem;
+    margin-top: 10px;
+}
+
+.hero__price {
+    font-size: 3.6rem;
+    font-weight: bold;
+    margin: 25px 0;
+}
+
+.hero__price span {
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.hero__desc, .hero__price p {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.hero__desc, .hero__buttons {
+    margin-bottom: 70px;
+}
+
+/* кнопки */
+.hero__buttons {
+    display: flex;
+    gap: 38px;
+}
+
+.btn {
+    width: 100%;
+    max-width: 420px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 0 20px #00000080;
+    font-weight: 600;
+}
+
+.btn--primary {
+    background: #f59e0b;
+    color: #fff;
+}
+
+.btn--secondary {
+    background: rgba(120, 90, 50, 0.8);
+    color: #fff;
+}
+
+/* карточки */
+.hero__features {
+    display: flex;
+    gap: 20px;
+}
+
+.feature {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 15px;
+    background: rgba(255,255,255,0.7);
+    color: #333;
+}
+
+.feature__icon img{
+    width: 100%;
+    max-width: 50px;
+    height: auto;
+}
+
+.feature h4 {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+/* Технология строительства */
+
+section {
+    margin: 0;
+    width: 100%;
+}
+
+.technology_block_1, .about_block_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.technology_block_1 img {
+    width: 100%;
+    max-width: 780px;
+    height: 100%;
+    box-shadow: 0 0 20px #00000059;
+    border-radius: 20px;
+}
+
+.technology_block_1 h2 {
+    font-size: 3.45rem;
+    font-weight: 900;
+    line-height: 167%;
+    letter-spacing: 1%;
+    text-transform: uppercase;
+    color: #424242;
+    padding: 10px 0 0;
+    text-align: justify;
+}
+
+.technology_block_1 h2 span:nth-of-type(1) {
+    font-size: 7rem;
+}
+
+.technology_block_1 h2 span:nth-of-type(2) {
+    font-size: 5.4rem;
+}
+
+.technology_block_1 h2 span:nth-of-type(3) {
+    font-size: 6.37rem;
+}
+
+.technology_block_1 h2 span:nth-of-type(4) {
+    font-size: 7rem;
+    letter-spacing: 6px;
+}
+
+.technology_block_2 h3 {
+    color: #424242;
+    font-weight: 500;
+    letter-spacing: 1%;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0;
+}
+
+.technology_block_2 h3 span:nth-of-type(1) {
+    font-size: 3rem;
+}
+
+.technology_block_2 h3 span:nth-of-type(2) {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    font-weight: 400;
+}
+
+.technology_block_3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 38px;
+}
+
+.technology_block_3 .step {
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 30px #00000025;
+    padding: 36px 40px;
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    gap: 20px;
+}
+
+.technology_block_3 .step h3 {
+    font-size: 1.7rem;
+    font-weight: 400;
+}
+
+.technology_block_3 .step p {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.technology_block_4 {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.technology_block_4 span {
+    font-weight: bold;
+}
+
+/* Почему выбирают нас */
+
+section:nth-of-type(2) {
+    background-color: #424242;
+
+}
+
+.about_block_1 img {
+    border-radius: 20px;
+    box-shadow: 0 0 20px #777777b8;
+    width: 100%;
+    max-width: 780px;
+    height: 100%;
 }

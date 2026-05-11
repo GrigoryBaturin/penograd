@@ -1,39 +1,169 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Document</title>
+    <title>Penograd</title>
 </head>
 <body>
-    <div class="wrapper">
-        <header>
-            <div class="topbar">
-                <div class="logo">
-                    <img src="./images/logotip.png" alt="">
+
+<header class="header">
+    <div class="topbar">
+        <div class="logo">
+            <img src="./images/logotip.png" alt="penograd">
+        </div>
+
+        <nav class="menu"> 
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Проекты домов</a></li>
+                <li><a href="#">Технология строительства</a></li>
+                <li><a href="#">Портфолио</a></li>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+         </nav>
+
+        <div class="social">
+            <ul>
+                <li><a href="#"><img src="./images/icons/telegram-2.png"></a></li>
+                <li><a href="#"><img src="./images/icons/whatsapp-2.png"></a></li>
+                <li><a href="#"><img src="./images/icons/max-2.png"></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="hero">
+        <div class="hero__overlay"></div>
+
+        <div class="container">
+            <div class="hero__content">
+                <h1 class="hero__title">
+                    Строительство<br>
+                    монолитных гаражей в Уфе
+                </h1>
+
+                <p class="hero__subtitle">из пенополистиролбетона</p>
+
+                <div class="hero__price">
+                    от <span>250 000 ₽</span>
+                    <p>с фиксированной ценой по договору</p>
                 </div>
-                <div class="menu">
-                    <ul>
-                        <li><a href="#">Главная</a></li>
-                        <li><a href="#">Проекты домов</a></li>
-                        <li><a href="#">Технология строительства</a></li>
-                        <li><a href="#">Портфолио</a></li>
-                        <li><a href="#">О компании</a></li>
-                        <li><a href="#">Контакты</a></li>
-                    </ul>
-                </div>
-                <div class="social">
-                    <ul>
-                        <li><a href="#"><img src="./images/icons/telegram.png" alt=""></a></li>
-                        <li><a href="#"><img src="./images/icons/whatsapp.png" alt=""></a></li>
-                        <li><a href="#"><img src="./images/icons/max.png" alt=""></a></li>
-                    </ul>
+
+                <p class="hero__desc">
+                    Теплые гаражи под ключ в Уфе<br>
+                    Без утепления. От 10 дней. С гарантией.
+                </p>
+
+                <div class="hero__buttons">
+                    <a href="#" class="btn btn--primary">Получить расчёт за 5 минут</a>
+                    <a href="#" class="btn btn--secondary">Посмотреть проекты</a>
                 </div>
             </div>
-        </header>
-        <main></main>
-        <footer></footer>
+
+            <div class="hero__features">
+                <div class="feature">
+                    <div class="feature__icon">
+                        <img src="../assets/images/icons/icons8-ok-150.png" alt="">
+                    </div>
+                    <div>
+                        <h4>10+ лет на рынке</h4>
+                        <p>Построим дом, коттедж, гараж полностью под ключ</p>
+                    </div>
+                </div>
+
+                <div class="feature">
+                    <div class="feature__icon">
+                        <img src="../assets/images/icons/icons8-ok-150.png" alt="">
+                    </div>
+                    <div>
+                        <h4>3 года</h4>
+                        <p>Предоставляем гарантию на построенную недвижимость</p>
+                    </div>
+                </div>
+
+                <div class="feature">
+                    <div class="feature__icon">
+                        <img src="../assets/images/icons/icons8-ok-150.png" alt="">
+                    </div>
+                    <div>
+                        <h4>до 30 дней</h4>
+                        <p>Возведение в короткие сроки</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+</header>
+
+<main>
+    <section class="technology">
+        <div class="container">
+            <div class="technology_block_1">
+                <img src="./images/lucid.png" alt="">
+                <div class="technology__title">
+                    <h2>
+                        <span>Технология</span>
+                        <span>строительства</span>
+                        <span>монолитных</span>
+                        <span>гаражей из</span>
+                        <span>пенополистеролбетона</span></h2>
+                </div>
+            </div>
+            <div class="technology_block_2">
+                <h3>
+                    <span>Как мы строим гаражи?</span>
+                    <span>Более 50 построенных гаражей в Уфе и Республике Башкортостан</span>
+                </h3>
+            </div>
+            <div class="technology_block_3">
+
+                <div class="step">
+                    <img src="./images/icons/build.png" alt="">
+                    <h3>
+                        1. Установка опалубки
+                    </h3>
+                    <p>Мы подготавливаем основание и устанавливаем надежную опалубку, которая формирует геометрию будущего гаража.</p>
+                </div>
+
+                <div class="step">
+                    <img src="./images/icons/brick-wall.png" alt="">
+                    <h3>
+                        2. Заливка пенополистеролбетона
+                    </h3>
+                    <p>В опалубку заливается современный материал — пенополистиролбетон, обладающий высокой теплоизоляцией и прочностью.</p>
+                </div>
+
+                <div class="step">
+                    <img src="./images/icons/construction.png" alt="">
+                    <h3>
+                        3. Монолитные стены
+                    </h3>
+                    <p>После застывания формируются цельные стены без швов, которые не пропускают холод и влагу.</p>
+                </div>
+
+            </div>
+            <div class="technology_block_4">
+                <p>Итог:<span> тепло, прочность, без дополнительного утелпения.</span></p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="about_block_1">
+                <div class="about__title">
+                    <h2>
+                        <span>Технология</span>
+                        <span>строительства</span>
+                        <span>монолитных</span>
+                        <span>гаражей из</span>
+                        <span>пенополистеролбетона</span></h2>
+                </div>
+                <img src="./images/builders.png" alt="">
+            </div>
+        </div>
+    </section>
+</main>
+
 </body>
 </html>
